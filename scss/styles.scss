@@ -1,0 +1,22 @@
+h2 {
+  color: $gray;
+  font-family: 'BrandonGrotesqueLight';
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'BrandonGrotesqueLight';
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  text-align: center;
+  width: 46%;
+  a {
+    color: $gray;
+    font-family: 'BrandonGrotesqueMed';
+    text-decoration: none;
+  }
+}
