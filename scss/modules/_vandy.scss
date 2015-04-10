@@ -1,0 +1,30 @@
+section.vandy {
+  background: url('../img/bg_vandy.jpg') top center no-repeat #1b1b1b;
+  .vandy-logo {
+    @include grid-column(8, $offset: 2);
+    padding: 4rem 0 2rem;
+  }
+  .vandy-copy {
+    @include grid-column(10, $offset: 1);
+    color: #cdced1;
+    padding-bottom: 2rem;
+  }
+  .vandy-laptop {
+    @include grid-column(10);
+    margin-left: -3rem;
+  }
+  .vandy-cover, .vandy-ad, .vandy-newspaper {
+    padding-bottom: 15rem;
+    h2 {
+      color: #cdced1;
+      padding-bottom: 1rem;
+    }
+    p {
+      color: #cdced1;
+      padding-bottom: 2rem;
+    }
+  }
+  .thanks, .checkout {
+    color: #cdced1;
+  }
+}

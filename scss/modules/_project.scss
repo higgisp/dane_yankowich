@@ -12,7 +12,6 @@ header {
     margin-left: 30px;
     ul {
       line-height: 60px;
-      margin-bottom: 0;
       li {
         display: inline-block;
         margin-left: 15px;
@@ -58,13 +57,10 @@ header {
   }
   nav {
     float: left;
-    ul {
-      margin-bottom: 0;
-      li {
-        margin-left: 50px;
-        &:first-child {
-          margin-left: 0;
-        }
+    ul li {
+      margin-left: 50px;
+      &:first-child {
+        margin-left: 0;
       }
     }
     a {

@@ -1,0 +1,64 @@
+.arrow {
+  clear: both;
+  height: 50px;
+  padding: 75px 0 150px;
+  position: relative;
+  -webkit-animation:bounce 1s infinite;
+  width: 100%;
+}
+
+#chevron {
+  position: relative;
+  margin: 0 auto;
+  height: 2px;
+  width: 27px;
+}
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: #5f5f5f;
+  -webkit-transform: skew(0deg, 45deg);
+  -moz-transform: skew(0deg, 45deg);
+  -ms-transform: skew(0deg, 45deg);
+  -o-transform: skew(0deg, 45deg);
+  transform: skew(0deg, 45deg);
+}
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #5f5f5f;
+  -webkit-transform: skew(0deg, -45deg);
+  -moz-transform: skew(0deg, -45deg);
+  -ms-transform: skew(0deg, -45deg);
+  -o-transform: skew(0deg, -45deg);
+  transform: skew(0deg, -45deg);
+}
+
+
+@-webkit-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+
+  25%, 75% {
+    bottom:15px;
+  }
+
+
+  50% {
+    bottom:20px;
+  }
+
+  100% {
+    bottom:0;
+  }
+}

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dane Yankowich</title>
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.min.css">
 </head>
 <body>
   <header>
@@ -13,9 +13,9 @@
     <div id="menu">
       <nav>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="hello">About Me</a></li>
+          <li><a href="#" id="work">Projects</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
         </ul>
       </nav>
       <div class="social">
@@ -35,33 +35,52 @@
       <img src="../img/logo-sweethome.png" class="atd-logo">
       <p class="atd-copy">Sweet Home Alabama is a journey into Alabama tourism. Whether your journey takes you to visit the white sandy beaches of the Gulf, or the beautiful golf courses, or trying some of the great local food. I worked with a small team to create a user friendly experience across multiple digital mediums.</p>
       <img src="../img/atd-imac.png" class="atd-imac">
+      <div class="arrow"><div id="chevron"></div></div>
     </div>
-    <div class="atd-slider1">
+    <div class="atd-slider1 row">
       <h2><span>ONLINE</span> EXPERIENCE</h2>
+      <div class="laptop">
+        <ul class="orbit" data-orbit>
+          <li><img src="../img/atd-slider1-1.jpg"></li>
+          <li><img src="../img/atd-slider1-2.jpg"></li>
+        </ul>
+      </div>
     </div>
-    <div class="atd-slider2">
+    <div class="atd-slider2 row">
       <h2><span>Banner</span> Ads</h2>
+      <div class="banners">
+        <ul class="orbit" data-orbit>
+          <li><img src="../img/atd-slider3-1.jpg"></li>
+          <li><img src="../img/atd-slider3-2.jpg"></li>
+        </ul>
+      </div>
     </div>
-    <div class="atd-slider3">
+    <div class="atd-slider3 row">
       <h2><span>E-NEWSLETTERS</span></h2>
+      <div class="emails">
+        <ul class="orbit" data-orbit>
+          <li><img src="../img/atd-slider3-1.jpg"></li>
+          <li><img src="../img/atd-slider3-2.jpg"></li>
+        </ul>
+      </div>
     </div>
-    <h3>THANKS FOR WATCHING</h3>
-    <h4>CHECK OUT MORE CAMPAIGNS BELOW</h4>
+    <h3 class="thanks">THANKS FOR WATCHING</h3>
+    <h4 class="checkout">CHECK OUT MORE CAMPAIGNS BELOW</h4>
   </section>
   <section class="work clearfix">
-    <a href="#" class="tile">
+    <a href="../projects/alabama-tourism.html" class="tile">
       <img src="../img/tile_atd.jpg">
       <h4>Alabama Tourism<br><span>— view —</span></h4>
     </a>
-    <a href="#" class="tile">
+    <a href="../projects/regions.html" class="tile">
       <img src="../img/tile_regions.jpg">
       <h4>Regions Tradition<br><span>— view —</span></h4>
     </a>
-    <a href="#" class="tile">
+    <a href="../projects/vandy.html" class="tile">
       <img src="../img/tile_vandy.jpg">
       <h4>Vanderbilt Athletics<br><span>— view —</span></h4>
     </a>
-    <a href="#" class="tile">
+    <a href="../projects/little-debbie.html" class="tile">
       <img src="../img/tile_ld.jpg">
       <h4>Little Debbie<br><span>— view —</span></h4>
     </a>
@@ -127,6 +146,8 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="../bower_components/foundation/js/foundation.min.js"></script>
+  <script src="../js/scrollTo.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

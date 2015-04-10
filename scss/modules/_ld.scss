@@ -1,0 +1,39 @@
+section.little-debbie {
+  background: url('../img/bg_ld.jpg') top center no-repeat #ffffff;
+  display: inline-block;
+  .ld-logo {
+    @include grid-column(4, $offset: 4);
+    margin: 10rem 0 3rem;
+  }
+  .ld-copy {
+    @include grid-column(9.25, $offset: 1.375);
+    font-size: 1rem;
+    text-align: center;
+  }
+  .ld-slider-copy {
+    clear: both;
+    @include grid-column(8, $offset: 2);
+    font-family: 'BrandonGrotesqueMed';
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .ld-cookie {
+    @include grid-column(8, $offset: 2);
+    margin: 3rem 0;
+  }
+  .ld-slider1, .ld-slider2, .ld-slider3, .ld-slider4 {
+    @include grid-column(8, $offset: 2);
+    div {
+      @include grid-column(10, $offset: 1);
+      clear: both;
+      .orbit-container {
+        .orbit-prev {
+          margin-left: 50px;
+        }
+        .orbit-next {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}

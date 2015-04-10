@@ -5727,6 +5727,8 @@ h2 {
   padding-bottom: 3rem;
   text-align: center;
   text-transform: uppercase; }
+  h2 span {
+    font-family: 'BrandonGrotesqueBlack'; }
 
 p {
   font-family: 'BrandonGrotesqueLight';
@@ -5751,7 +5753,8 @@ header {
     float: right;
     margin-left: 30px; }
     header .social ul {
-      line-height: 60px; }
+      line-height: 60px;
+      margin-bottom: 0; }
       header .social ul li {
         display: inline-block;
         margin-left: 15px; }
@@ -5792,10 +5795,12 @@ header {
             background-position: -140px -26px; }
   header nav {
     float: left; }
-    header nav ul li {
-      margin-left: 50px; }
-      header nav ul li:first-child {
-        margin-left: 0; }
+    header nav ul {
+      margin-bottom: 0; }
+      header nav ul li {
+        margin-left: 50px; }
+        header nav ul li:first-child {
+          margin-left: 0; }
     header nav a {
       color: #adadad;
       font-family: 'BrandonGrotesqueBlack';
@@ -6021,6 +6026,61 @@ footer {
   .diamond {
     margin-top: 0; } }
 
+.arrow {
+  clear: both;
+  height: 50px;
+  padding: 75px 0 150px;
+  position: relative;
+  -webkit-animation: bounce 1s infinite;
+  width: 100%; }
+
+#chevron {
+  position: relative;
+  margin: 0 auto;
+  height: 2px;
+  width: 27px; }
+
+#chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: #5f5f5f;
+  -webkit-transform: skew(0deg, 45deg);
+  -moz-transform: skew(0deg, 45deg);
+  -ms-transform: skew(0deg, 45deg);
+  -o-transform: skew(0deg, 45deg);
+  transform: skew(0deg, 45deg); }
+
+#chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #5f5f5f;
+  -webkit-transform: skew(0deg, -45deg);
+  -moz-transform: skew(0deg, -45deg);
+  -ms-transform: skew(0deg, -45deg);
+  -o-transform: skew(0deg, -45deg);
+  transform: skew(0deg, -45deg); }
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 5px; }
+
+  25%, 75% {
+    bottom: 15px; }
+
+  50% {
+    bottom: 20px; }
+
+  100% {
+    bottom: 0; } }
+
 #nav-toggle {
   cursor: pointer;
   margin-top: 10px;
@@ -6063,7 +6123,7 @@ footer {
 #menu {
   display: block;
   float: right;
-  width: 65%; }
+  width: auto; }
 
 @media only screen and (max-width: 1024px) {
   #menu {
@@ -6086,23 +6146,48 @@ footer {
         text-align: center;
         width: 100%; } }
 
-section.banner {
+.orbit-container {
+  overflow: visible; }
+  .orbit-container .orbit-next, .orbit-container .orbit-prev {
+    width: 28px;
+    height: 28px; }
+    .orbit-container .orbit-next span, .orbit-container .orbit-prev span {
+      border: none;
+      height: 28px;
+      width: 28px; }
+    .orbit-container .orbit-next:hover, .orbit-container .orbit-prev:hover {
+      background-color: transparent; }
+  .orbit-container .orbit-prev {
+    margin-left: -120px; }
+    .orbit-container .orbit-prev span {
+      background: url('../img/arrow-left.png') top center no-repeat;
+      background-size: contain; }
+  .orbit-container .orbit-next {
+    margin-right: -100px; }
+    .orbit-container .orbit-next span {
+      background: url('../img/arrow-right.png') top center no-repeat;
+      background-size: contain; }
+
+.orbit-slides-container {
+  overflow: hidden !important; }
+
+section.home-banner {
   background-attachment: fixed;
   background: url('../img/bg_banner.jpg') top center;
   background-size: cover;
   padding-top: 15%; }
-  section.banner h1 {
+  section.home-banner h1 {
     color: #c3c3c3;
     font-family: 'BrandonGrotesqueLight';
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
     width: 100%; }
-    section.banner h1 span {
+    section.home-banner h1 span {
       color: #555555; }
-  section.banner #scroll-down {
+  section.home-banner #scroll-down {
     width: 100%; }
-    section.banner #scroll-down p {
+    section.home-banner #scroll-down p {
       color: #555555;
       font-family: 'BrandonGrotesqueBlack';
       font-size: 0.75rem;
@@ -6212,7 +6297,7 @@ section.resume {
         text-transform: uppercase; }
 
 @media only screen and (max-width: 1024px) {
-  section.banner h1 {
+  section.home-banner h1 {
     font-size: 4rem; }
   section.work .tile {
     padding-left: 0.9375rem;
@@ -6234,9 +6319,9 @@ section.resume {
     float: left; } }
 
 @media only screen and (max-width: 736px) {
-  section.banner h1 {
+  section.home-banner h1 {
     font-size: 2rem; }
-  section.banner #scroll-down {
+  section.home-banner #scroll-down {
     margin-top: 100px; }
   section.hello {
     padding: 7rem 0; }
@@ -6276,6 +6361,7 @@ h4.checkout {
   font-family: 'BrandonGrotesqueMed';
   font-size: 1.25rem;
   padding-bottom: 8rem;
+  margin-bottom: 0;
   text-align: center; }
 
 section.alabama-tourism {
@@ -6303,6 +6389,22 @@ section.alabama-tourism {
     float: left;
     margin-top: 8rem; }
 
+.laptop {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  background: url('../img/laptop.png') top center no-repeat;
+  background-size: contain;
+  padding: 4% 17.75% 4% 18.2%; }
+
+.emails {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 37.5%;
+  float: left;
+  margin-left: 31.25% !important; }
+
 section.regions {
   background: url('../img/bg_regions.jpg') top center no-repeat #f8f9f9; }
   section.regions .regions-logo {
@@ -6320,6 +6422,31 @@ section.regions {
     margin-left: 11.45833% !important;
     font-size: 1rem;
     text-align: center; }
+  section.regions .video-border {
+    background: url('../img/regions-video-holder.png') top center no-repeat;
+    background-size: contain;
+    padding: 2.6% 2.7% 1.1% 2.9%; }
+  section.regions .video-holder {
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    position: relative;
+    height: 0; }
+    section.regions .video-holder iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  section.regions .flyer {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 77.08333%;
+    float: left;
+    margin-left: 11.45833% !important; }
+    section.regions .flyer .orbit-container .orbit-next {
+      margin-right: 50px; }
+    section.regions .flyer .orbit-container .orbit-prev {
+      margin-left: 50px; }
   section.regions .regions-kiosk {
     width: 100%;
     margin-left: auto;
@@ -6338,3 +6465,90 @@ section.regions {
       width: 25%;
       float: left;
       margin-left: 37.5% !important; }
+
+section.little-debbie {
+  background: url('../img/bg_ld.jpg') top center no-repeat #ffffff;
+  display: inline-block; }
+  section.little-debbie .ld-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 33.33333%;
+    float: left;
+    margin-left: 33.33333% !important;
+    margin: 10rem 0 3rem; }
+  section.little-debbie .ld-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 77.08333%;
+    float: left;
+    margin-left: 11.45833% !important;
+    font-size: 1rem;
+    text-align: center; }
+  section.little-debbie .ld-slider-copy {
+    clear: both;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    font-family: 'BrandonGrotesqueMed';
+    font-size: 1.25rem;
+    text-align: center; }
+  section.little-debbie .ld-cookie {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0; }
+  section.little-debbie .ld-slider1, section.little-debbie .ld-slider2, section.little-debbie .ld-slider3, section.little-debbie .ld-slider4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important; }
+    section.little-debbie .ld-slider1 div, section.little-debbie .ld-slider2 div, section.little-debbie .ld-slider3 div, section.little-debbie .ld-slider4 div {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 83.33333%;
+      float: left;
+      margin-left: 8.33333% !important;
+      clear: both; }
+      section.little-debbie .ld-slider1 div .orbit-container .orbit-prev, section.little-debbie .ld-slider2 div .orbit-container .orbit-prev, section.little-debbie .ld-slider3 div .orbit-container .orbit-prev, section.little-debbie .ld-slider4 div .orbit-container .orbit-prev {
+        margin-left: 50px; }
+      section.little-debbie .ld-slider1 div .orbit-container .orbit-next, section.little-debbie .ld-slider2 div .orbit-container .orbit-next, section.little-debbie .ld-slider3 div .orbit-container .orbit-next, section.little-debbie .ld-slider4 div .orbit-container .orbit-next {
+        margin-right: 50px; }
+
+section.vandy {
+  background: url('../img/bg_vandy.jpg') top center no-repeat #1b1b1b; }
+  section.vandy .vandy-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    padding: 4rem 0 2rem; }
+  section.vandy .vandy-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    color: #cdced1;
+    padding-bottom: 2rem; }
+  section.vandy .vandy-laptop {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: -3rem; }
+  section.vandy .vandy-cover, section.vandy .vandy-ad, section.vandy .vandy-newspaper {
+    padding-bottom: 15rem; }
+    section.vandy .vandy-cover h2, section.vandy .vandy-ad h2, section.vandy .vandy-newspaper h2 {
+      color: #cdced1;
+      padding-bottom: 1rem; }
+    section.vandy .vandy-cover p, section.vandy .vandy-ad p, section.vandy .vandy-newspaper p {
+      color: #cdced1;
+      padding-bottom: 2rem; }
+  section.vandy .thanks, section.vandy .checkout {
+    color: #cdced1; }

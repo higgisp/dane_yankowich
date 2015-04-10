@@ -1,4 +1,4 @@
-section.banner {
+section.home-banner {
   background-attachment: fixed;
   background: url('../img/bg_banner.jpg') top center;
   background-size: cover;
@@ -140,7 +140,7 @@ section.resume {
 
 //Tablet
 @media only screen and (max-width : 1024px)  {
-  section.banner {
+  section.home-banner {
     h1 {
       font-size: 4rem;
     }
@@ -164,7 +164,7 @@ section.resume {
 
 //Phone
 @media only screen and (max-width : 736px) {
-  section.banner {
+  section.home-banner {
     h1 {
       font-size: 2rem;
     }
@@ -219,5 +219,6 @@ h4.checkout {
   font-family: 'BrandonGrotesqueMed';
   font-size: 1.25rem;
   padding-bottom: 8rem;
+  margin-bottom: 0;
   text-align: center;
 }

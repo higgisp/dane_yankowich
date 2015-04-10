@@ -1,0 +1,34 @@
+.orbit-container {
+  overflow: visible;
+  .orbit-next, .orbit-prev {
+    width: 28px;
+    height: 28px;
+    span {
+      border: none;
+      height: 28px;
+      width: 28px;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .orbit-prev {
+    margin-left: -120px;
+    span {
+      background: url('../img/arrow-left.png') top center no-repeat;
+      background-size: contain;
+    }
+  }
+  .orbit-next {
+    margin-right: -100px;
+    span {
+      background: url('../img/arrow-right.png') top center no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.orbit-slides-container {
+    overflow: hidden !important;
+}

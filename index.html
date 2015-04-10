@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dane Yankowich</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
   <header>
@@ -13,9 +13,9 @@
     <div id="menu">
       <nav>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="hello">About Me</a></li>
+          <li><a href="#" id="work">Projects</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
         </ul>
       </nav>
       <div class="social">
@@ -30,7 +30,7 @@
       </div>
     </div>
   </header>
-  <section class="banner">
+  <section class="home-banner">
     <h1>Art Director <span>&</span><br>Designer</h1>
     <div id="scroll-down">
       <div class="diamond">
@@ -46,19 +46,19 @@
     <p>Below are a few selections of my work. If you would like to learn more, or see somethign specific, please <a href="mailto:hello@daneyankowich.com?subject=Hey there">get in touch</a>. You can also say “hey” to me via <a href="https://twitter.com/daneyankowich">Twitter</a>, or follow me on <a href="https://instagram.com/daneyankowich">Instagram</a>.</p>
   </section>
   <section class="work clearfix">
-    <a href="#" class="tile">
+    <a href="projects/alabama-tourism.html" class="tile">
       <img src="img/tile_atd.jpg">
       <h4>Alabama Tourism<br><span>— view —</span></h4>
     </a>
-    <a href="#" class="tile">
+    <a href="projects/regions.html" class="tile">
       <img src="img/tile_regions.jpg">
       <h4>Regions Tradition<br><span>— view —</span></h4>
     </a>
-    <a href="#" class="tile">
+    <a href="projects/vandy.html" class="tile">
       <img src="img/tile_vandy.jpg">
       <h4>Vanderbilt Athletics<br><span>— view —</span></h4>
     </a>
-    <a href="#" class="tile">
+    <a href="projects/little-debbie.html" class="tile">
       <img src="img/tile_ld.jpg">
       <h4>Little Debbie<br><span>— view —</span></h4>
     </a>
@@ -179,6 +179,8 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/scrollTo.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

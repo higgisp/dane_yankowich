@@ -9,6 +9,35 @@ section.regions {
     font-size: 1rem;
     text-align: center;
   }
+  .video-border {
+    background: url('../img/regions-video-holder.png') top center no-repeat;
+    background-size: contain;
+    padding: 2.6% 2.7% 1.1% 2.9%;
+  }
+  .video-holder {
+    padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  .flyer {
+    @include grid-column(9.25, $offset: 1.375);
+    .orbit-container {
+      .orbit-next {
+        margin-right: 50px;
+      }
+      .orbit-prev {
+        margin-left: 50px;
+      }
+    }
+  }
   .regions-kiosk {
     @include grid-row();
     .kiosk {
