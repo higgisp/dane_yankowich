@@ -1,30 +1,100 @@
 section.vandy {
   background: url('../img/bg_vandy.jpg') top center no-repeat #1b1b1b;
+  background-size: 100%;
+  p {
+    font-size: 1rem;
+    color: #cdced1;
+    padding-bottom: 2rem;
+    a {
+      color: #cdced1;
+    }
+    &.vandy-gif-text {
+      z-index: 10;
+    }
+  }
   .vandy-logo {
     @include grid-column(8, $offset: 2);
     padding: 4rem 0 2rem;
   }
   .vandy-copy {
-    @include grid-column(10, $offset: 1);
+    @include grid-column(8, $offset: 2);
     color: #cdced1;
     padding-bottom: 2rem;
+    font-size: 1rem;
   }
   .vandy-laptop {
     @include grid-column(10);
     margin-left: -3rem;
   }
-  .vandy-cover, .vandy-ad, .vandy-newspaper {
+  .vandy-ad {
+    background: url('http://daneyankowich.com/img/vandy-awards-2.jpg') 94% 1% no-repeat;
+    background-size: 14%;
+  }
+  .vandy-cover, .vandy-ad, .vandy-newspaper, .vandy-awards {
     padding-bottom: 15rem;
+    p.news {
+      font-size: 1rem;
+      @include grid-column(5, $offset: 3.5);
+    }
     h2 {
       color: #cdced1;
-      padding-bottom: 1rem;
     }
-    p {
+    p.awards {
+      @include grid-column(12, $offset: 0);
+      font-size: 1rem;
       color: #cdced1;
-      padding-bottom: 2rem;
+      text-align: center;
     }
+    .logos {
+      @include grid-row();
+      img {
+        @include grid-column(3);
+      }
+    }
+  }
+  .vandy-awards {
+    padding-bottom: 0;
+  }
+  .vandy-gif {
+    z-index: -1;
+  }
+  .video-holder {
+    padding-bottom: 63.25%;
+    margin-bottom: 12rem;
   }
   .thanks, .checkout {
     color: #cdced1;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.vandy {
+    p {
+      width: 100%;
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+    .vandy-ad {
+      background: none;
+    }
+    .vandy-cover p, .vandy-cover img, .vandy-laptop {
+      @include grid-column(12);
+      margin-left: 0;
+    }
+    .vandy-cover {
+      padding-bottom: 8rem;
+    }
+    .vandy-ad, .vandy-newspaper {
+      @include grid-column(12);
+      padding-bottom: 8rem;
+      p.news {
+        @include grid-column(12);
+        margin-left: 0 !important;
+      }
+    }
+    .video-holder {
+      margin-bottom: 8rem;
+    }
   }
 }

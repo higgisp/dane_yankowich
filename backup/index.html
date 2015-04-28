@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dane Yankowich - Art Director</title>
+  <style>
+    html {
+      background: url('images/bg.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    h1 {
+      font-family: "Arial Narrow", Arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 60px;
+      color: #c4c4c4;
+    }
+
+    #logo {
+      display:block;
+      margin: 10rem auto 2rem;
+    }
+
+    #social {
+      position: absolute;
+      top: 14px;
+      right: 65px;
+    }
+
+    #social a {
+      display: inline-block;
+    }
+
+    #social a img {
+      float: left;
+    }
+
+    #social a img.full {
+        display: inline-block;
+    }
+
+    #social a img.mobile {
+      display:none;
+    }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+      html {
+        background: url('images/bg_mobile.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      #logo {
+        width: 80%;
+        margin-top: 6.5rem;
+      }
+      #social a img.full {
+        display: none;
+      }
+      #social a img.mobile {
+        display: inline-block;
+      }
+    }
+
+  </style>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-22817712-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+<body>
+  <div id="social">
+    <a href="https://www.facebook.com/daneyankowich" target="_new">
+      <img src="images/facebook.png" alt="Facebook" class="full">
+      <img src="images/mobile_facebook.png" alt="Facebook" class="mobile">
+    </a>
+
+    <a href="https://twitter.com/daneyankowich" target="_new">
+      <img src="images/twitter.png" alt="Twitter" class="full">
+      <img src="images/mobile_twitter.png" alt="Twitter" class="mobile">
+    </a>
+
+    <a href="https://www.linkedin.com/in/daneyankowich" target="_new">
+      <img src="images/linkedin.png" alt="Linked in" class="full">
+      <img src="images/mobile_linkedin.png" alt="Linked in" class="mobile">
+    </a>
+
+    <a href="resume.pdf" target="_new">
+      <img src="images/resume.png" alt="Resume" class="full">
+      <img src="images/mobile_resume.png" alt="Resume" class="mobile">
+    </a>
+
+    <a href="mailto:daneyankowich@gmail.com" target="_new">
+      <img src="images/email.png" alt="Email" class="full">
+      <img src="images/mobile_email.png" alt="Email" class="mobile">
+    </a>
+  </div>
+  <img src="images/logo.png" id="logo" alt="Coming soon!">
+</body>
+</html>

@@ -1,0 +1,43 @@
+section.luckie {
+  background-size: contain;
+  border-top: 5px solid #93b43d;
+  .luckie-logo {
+    @include grid-column(4, $offset: 4);
+    margin: 5rem 0 1rem;
+  }
+  .laptop {
+    margin-bottom: 0;
+  }
+  .luckie-online {
+    h2 {
+      padding: 0;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 2rem;
+      a {
+        color: #93b43d;
+        font-size: 1rem;
+        font-family: 'BrandonGrotesqueBlack';
+      }
+    }
+  }
+  .luckie-copy {
+    @include grid-column(8, $offset: 2);
+    font-size: 1rem;
+    margin: 2rem 0 0;
+  }
+  .luckie-imac {
+    @include grid-column(12);
+    margin-top: 8rem;
+  }
+  .luckie-laptop {
+    @include grid-column(12);
+    margin-bottom: 15rem;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.luckie {
+  }
+}

@@ -15,16 +15,17 @@ footer {
   }
   ul {
     display: inline-block;
+    margin-left: -6rem;
     li {
       display: inline-block;
-      padding: 0 1.375rem;
+      padding: 0 1.375rem 0 0.5rem;
       &.first {
         border-right: 1px solid $light-gray;
         padding-right: 1.375rem;
       }
       &.last {
         border-left: 1px solid $light-gray;
-        padding-left: 1.375rem;
+        padding-left: 0.5rem;
       }
       a {
         color: $light-gray;

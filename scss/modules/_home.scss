@@ -82,6 +82,9 @@ section.work {
 
 section.hello {
   padding: 15rem 0;
+  h2 br {
+    display: none;
+  }
 }
 
 section.resume {
@@ -164,6 +167,9 @@ section.resume {
 
 //Phone
 @media only screen and (max-width : 736px) {
+  h2 {
+    font-size: 2rem;
+  }
   section.home-banner {
     h1 {
       font-size: 2rem;
@@ -173,10 +179,12 @@ section.resume {
     }
   }
   section.hello {
-    padding: 7rem 0;
     h2 {
-      font-size: 3rem;
+      br {
+        display: inline-block;
+      }
     }
+    padding: 7rem 0;
     p {
       width: 90%;
     }
@@ -194,14 +202,17 @@ section.resume {
     }
     .download {
       a {
-        background: none;
-        padding: 0;
+        background-size: 18%;
+        padding: 0 0 0 3.25rem;
       }
     }
   }
   .experience, .education, .download {
     @include grid-column(12);
     text-align: center;
+    ul li {
+      font-size: 1.25rem;
+    }
     a {
       display: inline-block;
     }
@@ -209,16 +220,18 @@ section.resume {
 }
 
 h3.thanks {
+  color: #555555;
   font-family: 'BrandonGrotesqueLight';
-  font-size: 2.75rem;
-  padding-top: 8rem;
+  font-size: 2.5rem;
+  padding-top: 11rem;
   text-align: center;
 }
 
 h4.checkout {
-  font-family: 'BrandonGrotesqueMed';
-  font-size: 1.25rem;
-  padding-bottom: 8rem;
+  color: #555555;
+  font-family: 'BrandonGrotesqueReg';
+  font-size: 1rem;
+  padding-bottom: 13rem;
   margin-bottom: 0;
   text-align: center;
 }

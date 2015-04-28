@@ -1,0 +1,56 @@
+section.carespot {
+  background: url('../img/bg_carespot.jpg') top center repeat-y;
+  background-size: contain;
+  border-top: 5px solid #f58220;
+  .carespot-logo {
+    @include grid-column(4, $offset: 4);
+    margin: 5rem 0 1rem;
+  }
+  .carespot-copy {
+    @include grid-column(8, $offset: 2);
+    font-size: 1rem;
+    margin: 2rem 0 8rem;
+  }
+  .carespot-imac {
+    @include grid-column(12);
+    margin-top: 3rem;
+  }
+  .carespot-laptop {
+    @include grid-column(12);
+    margin-bottom: 15rem;
+  }
+  .carespot-phone {
+    @include grid-column(4, $offset: 4);
+    margin-bottom: 15rem;
+  }
+  .banner-ad {
+    margin-bottom: 10rem;
+    .banner-ad-thumbs {
+      background: white;
+    }
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.carespot {
+    h2 {
+      padding-bottom: 0;
+    }
+    .carespot-logo, .carespot-copy {
+      @include grid-column(12, $offset: 0);
+    }
+    .carespot-copy {
+      margin: 2rem 0 3rem;
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+    .carespot-online {
+      @include grid-column(12, $offset: 0);
+      margin-bottom: 3rem;
+    }
+    .emails {
+      @include grid-column(12, $offset: 0);
+    }
+  }
+}

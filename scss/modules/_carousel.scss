@@ -1,0 +1,76 @@
+section.iphone-carousel {
+  width: 26em;
+  height: 25em;
+  margin: 0 auto 12rem;
+  position: relative;
+
+  li {
+    width: 320px;
+    height: 517px;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .items {
+    position: absolute;
+  }
+
+  .main-pos {
+    margin-left: 2em !important;
+    z-index: 3000;
+    /*background-image: url('http://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+  }
+
+  .left-pos {
+    margin-left: -8em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(.75);
+    transform: scale(.75);
+  }
+
+  .back-pos {
+    margin-left: 2em !important;
+    opacity: .05;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    transform: scale(.5);
+  }
+
+  .right-pos {
+    margin-left:  13em !important;
+    z-index: 1000;
+    -webkit-transform: scale(.85);
+    -moz-transform: scale(.85);
+    transform: scale(.85);
+  }
+
+  span {
+    position: absolute;
+    top: 15em;
+    width: 100%;
+    #prev {
+      margin-left: -14em;
+      background: url('../img/arrow-left.png') top center no-repeat;
+      background-size: contain;
+      width: 28px;
+      height: 28px;
+      border:none;
+    }
+    #next {
+      margin-left: 55em;
+      background: url('../img/arrow-right.png') top center no-repeat;
+      background-size: contain;
+      width: 28px;
+      height: 28px;
+      border:none;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+section.gulf {
+  background: url('../img/bg_gulf.jpg') top center repeat-y;
+  background-size: contain;
+  border-top: 5px solid #ed1b2e;
+  p {
+    font-size: 1rem;
+  }
+  .gulf-logo {
+    @include grid-column(4, $offset: 4);
+    margin: 5rem 0 1rem;
+  }
+  .gulf-copy {
+    @include grid-column(8.5, $offset: 1.75);
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .gulf-resp {
+    @include grid-column(8, $offset: 0.9);
+    margin-top: 3rem;
+  }
+  .gulf-laptop {
+    @include grid-column(12);
+    margin-bottom: 15rem;
+  }
+  .gulf-phone {
+    @include grid-column(4, $offset: 4);
+    margin-bottom: 15rem;
+  }
+  .gulf-ads {
+    .banner-ad {
+      margin-bottom: 2rem;
+      .orbit-prev, .orbit-next, .orbit-bullets {
+        display: none;
+      }
+      .banner-ad-thumbs {
+        background: white;
+      }
+    }
+    .gulf-thumb {
+      @include grid-column(5, $offset: 3.5);
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.gulf {
+    .gulf-logo, .gulf-copy {
+      @include grid-column(12, $offset: 0);
+    }
+    .gulf-online {
+      @include grid-column(12, $offset: 0);
+      .gulf-laptop {
+        margin-bottom: 6rem;
+      }
+      .gulf-phone {
+        @include grid-column(8, $offset: 2);
+        margin-bottom: 6rem;
+      }
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+  }
+}

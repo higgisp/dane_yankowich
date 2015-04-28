@@ -1,0 +1,114 @@
+section.bayer {
+
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    padding-bottom: 0;
+  }
+  .home-banner {
+    background: url('http://daneyankowich.com/img/bayer-hero.png'), -webkit-linear-gradient(top, #0199ff, #FFFFFF);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    img {
+      @include grid-column(1.5, $offset: 5.25);
+      margin: 3rem 0 2rem;
+    }
+    p {
+      @include grid-column(5, $offset: 3.5);
+      color: $white;
+      line-height: 1.2;
+    }
+  }
+  img {
+    @include grid-column(10, $offset: 1);
+    &.hero {
+      width: 100%;
+      margin: 0 !important;
+      padding: 0;
+    }
+  }
+  .bayer-online {
+    h2 {
+      padding: 0;
+    }
+    p {
+      @include grid-column(8, $offset: 2);
+      text-align: center;
+      margin-bottom: 2rem;
+      a {
+        color: #0099ff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: 'BrandonGrotesqueBlack';
+      }
+    }
+    .imac {
+      margin-bottom: 10rem;
+    }
+  }
+  .ibrochure {
+    margin-bottom: 12rem;
+    @include grid-column(12, $offset: 0);
+    .orbit-prev, .orbit-next {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .orbit-bullets-container {
+      margin-top: -2rem;
+    }
+  }
+  .bayer-social {
+    margin-bottom: 12rem;
+    h2 {
+      padding-bottom: 0;
+    }
+  }
+  .social {
+    @include grid-column(8, $offset: 2);
+  }
+  .iphone-carousel {
+    display: block;
+  }
+  .mobile-digital {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.bayer {
+    h2, p, .social, .bayer-online, .bayer-online p, .bayer-online .imac, .bayer-online .ibrochure {
+     @include grid-column(12, $offset: 0);
+    }
+    .home-banner {
+      img {
+        @include grid-column(6, $offset: 3);
+        margin: 2rem 0 1rem;
+      }
+      p {
+        @include grid-column(12, $offset: 0);
+        font-weight: bold;
+      }
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+    .bayer-online .ibrochure,
+    .bayer-social,
+    .bayer-online .imac {
+      margin-bottom: 5rem;
+    }
+    .iphone-carousel {
+      display: none;
+    }
+    .mobile-digital {
+      display: block;
+      margin-bottom: 5rem;
+      img {
+        display: block;
+        margin: 3rem auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Dane Yankowich</title>
+
+<link REL="SHORTCUT ICON" HREF="/favicon.jpg" type="image/x-icon">	
+	<script src="jquery.tools.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+	<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({});
+	</script>
+	
+	
+	<script src="http://www.apple.com/library/quicktime/scripts/ac_quicktime.js" language="JavaScript" type="text/javascript"></script>
+	<script src="http://www.apple.com/library/quicktime/scripts/qtp_library.js" language="JavaScript" type="text/javascript"></script>
+	<link href="http://www.apple.com/library/quicktime/stylesheets/qtp_library.css" rel="StyleSheet" type="text/css" />
+
+
+<style type="text/css">
+
+	body{
+	margin:0px;
+	padding:0px;
+	font-family:arial,verdana, san-serif;
+	background-image: url(images/tile.jpg);}
+	
+	#outer_box{ 
+ 	position: relative;
+ 	margin: 0 auto;
+ 	width: 1024px;
+ 	height: 778px;
+ 	list-style: none;
+ 	}
+ 
+ 	.logo{
+ 	position: absolute;
+ 	float: left;
+ 	top: 12px;
+ 	left: 12px;
+ 	cursor: pointer;}
+ 	
+ 	.invisible_pixel{
+ 	position: absolute;
+ 	float: left;
+ 	top: 0px;
+ 	left: 0px;}  
+ 	
+ 	 	.invisible_email{
+ 	position: relative;
+ 	float: left;
+ 	top: 439px;
+ 	left: 14px;
+ 	z-index: 10;} 
+ 	
+ 	
+ 	.credits{
+ 	position: relative;
+ 	float: left;
+ 	top: 487px;
+ 	left: 14px;
+ 	z-index: 10;
+ 	padding: 0px;
+ 	margin: 0px;} 
+ 	
+
+ 		 	
+ 	 #prevPage{
+ 	position: absolute;
+ 	float: left;
+ 	top: 333px;
+ 	left: 26px;
+ 	z-index: 5;
+ 	cursor: pointer;}
+ 	
+ 	#nextPage{
+ 	position: absolute;
+ 	float: left;
+ 	top: 333px;
+ 	left: 953px;
+ 	z-index: 5;
+ 	cursor: pointer;}
+ 
+	#nav_box{
+	position: absolute;
+ 	float: left;
+ 	background-color: #fff;
+ 	top: 113px;
+ 	left: 146px;
+ 	height: 58px;
+ 	width: 731px;
+ 	list-style: none;
+	}
+	#blue_box{
+	position: absolute;
+ 	float: left;
+	background-image: url(images/blue_background.jpg);
+ 	top: 171px;
+ 	left: 0px;
+ 	height: 547px;
+ 	width: 1024px;
+ 	list-style: none;
+	}	
+	
+	#bottom_nav_box{
+	position: absolute;
+ 	float: left;
+	background-image: url(images/bottom_nav_background.png);
+ 	top: 718px;
+ 	left: 49px;
+ 	height: 42px;
+ 	width: 926px;
+ 	list-style: none;
+	}
+		
+ 	.work_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 140px;
+ 	left: 192px;
+ 	cursor: pointer;}
+ 	
+ 	.about_me_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 140px;
+ 	left: 290px;
+ 	cursor: pointer;}
+ 	
+ 	.extras_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 140px;
+ 	left: 427px;
+ 	cursor: pointer;}
+ 	
+ 	.download_me_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 140px;
+ 	left: 539px;
+ 	cursor: pointer;}
+ 	
+ 	.contact_me_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 140px;
+ 	left: 715px;
+ 	cursor: pointer;} 	
+ 	
+ 	.pixel_shim_1{
+ 	position: absolute;
+ 	float: left;
+ 	top: 130px;
+ 	left: 264px;} 
+ 	
+ 	.pixel_shim_2{
+ 	position: absolute;
+ 	float: left;
+ 	top: 130px;
+ 	left: 401px;} 
+ 	
+ 	.pixel_shim_3{
+ 	position: absolute;
+ 	float: left;
+ 	top: 130px;
+ 	left: 513px;}
+ 	 
+ 	.pixel_shim_4{
+ 	position: absolute;
+ 	float: left;
+ 	top: 130px;
+ 	left: 698px;}  	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	 	.work_2{
+ 	position: absolute;
+ 	float: left;
+ 	top: 726px;
+ 	left: 72px;
+ 	cursor: pointer;}
+ 	
+ 	 	 	.webmd_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 117px;
+ 	cursor: pointer;}
+ 	 	 	.portal_2_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 547px;
+ 	cursor: pointer;}
+ 	 	 	.mcdonalds_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 186px;
+ 	cursor: pointer;}
+ 	
+ 	 	 	.the_golf_channel_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 274px;
+ 	cursor: pointer;}
+ 	
+ 		 	 	.antico_pizza_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 403px;
+ 	cursor: pointer;}
+
+ 	 	 	.easy_cheese_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 620px;
+ 	cursor: pointer;}
+ 	 	 	.crystal_light_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 722px;
+ 	cursor: pointer;}
+
+ 	 	 	.choose_cash_link{
+ 	position: absolute;
+ 	float: left;
+ 	top: 735px;
+ 	left: 826px;
+ 	cursor: pointer;}
+ 
+ 	 	
+ 	
+ 	
+ 	
+ 	
+ 	.instructions{
+ 	position: absolute;
+ 	float: left;
+ 	top: 12px;
+ 	left: 891px;}  	 
+ 	
+ 	
+ 	
+ 	
+ 	
+ 		/* panes */
+#flowpanes {
+	background-color: #fff;
+	width:845px;
+	height:504px;	
+	border: #ffcc33 solid 5px;
+}
+
+
+/* single pane */
+#flowpanes div {
+	display:none;	
+	color:#000;	
+	margin:0px 0px;
+}
+
+
+
+	/* override the root element to enable scrolling */
+	#flowpanes {
+		position:relative;
+		overflow:hidden;
+		clear:both;
+		float: left;
+		left: 85px;
+		top: 183px;
+
+	}
+
+	/* override single pane */
+	#flowpanes div {
+		float:left;
+		display:block;
+		width:850px;
+	}
+
+	/* our additional wrapper element for the items */
+	#flowpanes .items {
+		width:20000em;
+		position:absolute;
+		clear:both;
+		margin:0;
+		padding:0;
+	}
+
+	#flowpanes .less, #flowpanes .less a {
+		color:#999 !important;
+		font-size:11px;
+	}	
+ 		
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<!--outer box-->
+<div id="outer_box">
+	
+
+	<img src="images/instructions.jpg" border="0" class="instructions" />
+		<div id="nav_box">&nbsp;</div>
+		<div id="bottom_nav_box">&nbsp;</div>
+		<div id="blue_box">&nbsp;</div>
+
+	<img src="images/prev.png" border="0" id="prevPage" class="custom prev" />
+	<img src="images/next.png" border="0" id="nextPage" class="custom next" />
+
+
+<!-- tabs work as navigator for scrollable -->
+<div id="tabs">
+	<li href="#"><img src="images/logo.jpg" border="0" class="logo" /></li>
+	
+	
+	
+		
+		 <img src="images/pixel_shim.jpg" border="0" class="pixel_shim_1" />
+		 <img src="images/pixel_shim.jpg" border="0" class="pixel_shim_2" />
+		 <img src="images/pixel_shim.jpg" border="0" class="pixel_shim_3" />
+		 <img src="images/pixel_shim.jpg" border="0" class="pixel_shim_4" />
+		 
+		 
+		 
+		 
+		 
+		 
+		 <li href="#"><img src="images/work.png" border="0" class="work_link" />
+		 
+		 	 <img src="images/webmd.png" border="0" class="webmd_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+
+		 <li><img src="images/mcdonalds.png" border="0" class="mcdonalds_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 		 
+		 <li><img src="images/the_golf_channel.png" border="0" class="the_golf_channel_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+				 		 
+		 <li><img src="images/antico_pizza.png" border="0" class="antico_pizza_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 		 	 
+		 <li><img src="images/portal_2.png" border="0" class="portal_2_link" /></li>	
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 		 
+		 <li><img src="images/easy_cheese.png" border="0" class="easy_cheese_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>		 
+		 	
+		 <li><img src="images/crystal_light.png" border="0" class="crystal_light_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>		
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 
+		 <li><img src="images/choose_cash.png" border="0" class="choose_cash_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>		
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 		 		 
+		 <li><img src="images/about_me.png" border="0" class="about_me_link" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+		 <li><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></li>
+
+		 
+		 <li><img src="images/extras.png" border="0" class="extras_link" /></li>
+		 
+		 <li><img src="images/download_me.png" border="0" class="download_me_link" /></li>
+		 
+		 <li><img src="images/contact_me.png" border="0" class="contact_me_link" /></li>
+		 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- panes -->
+<div id="flowpanes">
+
+
+	<!-- wrapper for scrollable items -->
+	<div class="items">
+
+		<div style="width:850px; height:509px; background-image: url(images/intro.jpg);">
+		<a href="mailto:daneyankowich@yahoo.com" target="_blank"><img src="images/invisibile_email.png" border="0" class="invisible_email" /></a>
+		</div>
+		
+		
+		<div style="width:850px; height:509px; background-image: url(images/WebMD1.jpg);">
+		<div class="credits"><a href="http://www.christianarogers.com" target="_blank"><img src="images/christian_rogers.png" border="0" /></a></div>
+		</div>
+		<div><img src="images/WebMD2.jpg" border="0" /></div>
+		<div><img src="images/WebMD3.jpg" border="0" /></div>
+		<div><img src="images/WebMD4.jpg" border="0" /></div>
+		<div><iframe src="http://player.vimeo.com/video/23995877?title=0&amp;byline=0&amp;portrait=0" width="850" height="509" frameborder="0"></iframe></div>
+		<div><img src="images/WebMD6.jpg" border="0" /></div>
+		
+				
+		<div style="width:850px; height:509px; background-image: url(images/McD1.jpg);">
+		<div class="credits"><a href="http://cargocollective.com/ericwebster" target="_blank"><img src="images/eric_webster.png" border="0" /></a></div>
+		</div>
+		<div><img src="images/McD2.jpg" border="0" /></div>
+		<div><img src="images/McD3.jpg" border="0" /></div>
+		<div><img src="images/McD4.jpg" border="0" /></div>
+		<div><img src="images/McD5.jpg" border="0" /></div>
+		
+		
+		<div style="width:850px; height:509px; background-image: url(images/Golf1.jpg);">
+		<div class="credits"><a href="http://cargocollective.com/ericwebster" target="_blank"><img src="images/eric_webster.png" border="0" /></a></div>
+		</div>		
+		<div><img src="images/Golf2.jpg" border="0" /></div>
+		<div><img src="images/Golf3.jpg" border="0" /></div>
+		<div><img src="images/Golf4.jpg" border="0" /></div>
+				
+				
+		<div style="width:850px; height:509px; background-image: url(images/Antico1.jpg);">
+		<div class="credits"><a href="http://cargocollective.com/ericwebster" target="_blank"><img src="images/eric_webster.png" border="0" /></a></div>
+		</div>		
+		<div><img src="images/Antico2.jpg" border="0" /></div>
+		<div><img src="images/Antico3.jpg" border="0" /></div>
+		<div><img src="images/Antico4.jpg" border="0" /></div>
+		<div><img src="images/Antico5.jpg" border="0" /></div>
+		<div><img src="images/Antico6.jpg" border="0" /></div>
+		<div><img src="images/Antico7.jpg" border="0" /></div>
+		
+		
+		<div style="width:850px; height:509px; background-image: url(images/Portal1.jpg);">
+		<div class="credits"><a href="http://cargocollective.com/blakesolomon" target="_blank"><img src="images/blake_solomon.png" border="0" /></a></div>
+		</div>			
+		<div><img src="images/Portal2.jpg" border="0" /></div>
+		<div><img src="images/Portal3.jpg" border="0" /></div>
+		<div><img src="images/Portal4.jpg" border="0" /></div>
+		<div><img src="images/Portal5.jpg" border="0" /></div>
+		<div><img src="images/Portal6.jpg" border="0" /></div>
+				
+				
+		<div style="width:850px; height:509px; background-image: url(images/EasyCheese1.jpg);">
+		<div class="credits"><a href="http://www.christianarogers.com" target="_blank"><img src="images/christian_rogers.png" border="0" /></a></div>
+		</div>		
+		<div><iframe src="http://player.vimeo.com/video/23719665?title=0&amp;byline=0&amp;portrait=0" width="850" height="509" frameborder="0"></iframe></iframe></div>
+		<div><iframe src="http://player.vimeo.com/video/23995780?title=0&amp;byline=0&amp;portrait=0" width="850" height="509" frameborder="0"></iframe></div>
+		<div><iframe src="http://player.vimeo.com/video/23995822?title=0&amp;byline=0&amp;portrait=0" width="850" height="509" frameborder="0"></iframe></div>
+		
+		
+		<div style="width:850px; height:509px; background-image: url(images/CrystalLight1.jpg);">
+		<div class="credits"><a href="http://www.amruta-anil.com" target="_blank"><img src="images/amruta_hunnurkar.png" border="0" /></a></div>
+		</div>		
+		<div><img src="images/CrystalLight2.jpg" border="0" /></div>
+		<div><img src="images/CrystalLight3.jpg" border="0" /></div>
+		<div><img src="images/CrystalLight4.jpg" border="0" /></div>
+		<div><img src="images/CrystalLight5.jpg" border="0" /></div>
+		<div><img src="images/CrystalLight6.jpg" border="0" /></div>
+		
+		
+		<div style="width:850px; height:509px; background-image: url(images/Cash1.jpg);">
+		<div class="credits"><a href="http://www.christianarogers.com" target="_blank"><img src="images/christian_rogers.png" border="0" /></a>
+		&nbsp;&nbsp;
+		<a href="http://www.christinacaluda.com" target="_blank"><img src="images/christina_caluda.png" border="0"/></a></div>
+		</div>
+		<div><img src="images/Cash2.jpg" border="0" /></div>
+		<div><img src="images/Cash3.jpg" border="0" /></div>
+		<div><img src="images/Cash4.jpg" border="0" /></div>
+		<div><img src="images/Cash5.jpg" border="0" /></div>
+		<div><img src="images/Cash6.jpg" border="0" /></div>
+
+		<div><img src="images/paragraph.jpg" border="0" /></div>
+
+		
+		<div><img src="images/about_me_1.jpg" border="0" /></div>
+		<div><img src="images/about_me_2.jpg" border="0" /></div>		
+		<div><img src="images/about_me_3.jpg" border="0" /></div>
+		<div><img src="images/about_me_4.jpg" border="0" /></div>	
+		
+		<!--Extras-->
+		<div>
+			
+
+			<img src="images/like_what_youre_seeing_extras.gif" style="float:left;margin:32px 0px 0px 31px" border="0" />
+			<div style="float:left;margin:105px 0px 0px 52px" >
+			<a href="http://daneyankowich.blogspot.com" target="_blank"><img src="images/other_stuff_i_do.gif" border="0" /></a><br />
+
+
+			<img src="images/pixel_spacer.gif" border="0" /><br />
+			
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/3some.jpg"><img src="images/photography_extras.gif" border="0" /></a><br />
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/hyde_1.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/img_2368.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/img_2579a.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/img_2689.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/img_6787_edit.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/prancer_2some.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/raccoon.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/self_portrait_1b.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/silhouette4.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/silhouette7.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/silhouette_1.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			<a rel="shadowbox[photography];width=720;height=540" href="images/photography/spider_web.jpg"><img src="images/invisible_pixel.gif" border="0" class="invisible_pixel" /></a>
+			
+			
+			
+						
+			</div>
+		</div>
+		<!--End of Extras-->
+		
+		
+		<!--Downloadables-->
+		<div>
+			<img src="images/take_my_stuff_downloads.gif" style="float:left;margin:32px 0px 0px 31px" border="0" />
+			<div style="float:left;margin:61px 0px 0px 52px" >
+			<a href="Dane_Yankowich_hi_res.pdf" target="_blank"><img src="images/hi_res_pdf_downloads.gif" id="hi_res_pdf_downloads" border="0" /></a><br />
+			<img src="images/pixel_spacer.gif" border="0" /><br />
+			<a href="Dane_Yankowich_low_res_book.pdf" target="_blank"><img src="images/low_res_pdf_downloads.gif" id="low_res_pdf_downloads" border="0" /></a><br />
+			<img src="images/pixel_spacer.gif" border="0" /><br />
+			<a href="Dane_Yankowich_Resume.pdf" target="_blank"><img src="images/resume_downloads.gif" id="resume_downloads" border="0" /></a>
+			</div>
+		</div>
+		<!--End of Downloadables-->
+		
+		
+		<!--Contact-->
+		<div>
+			<img src="images/get_in_touch_contact.gif" style="float:left;margin:32px 0px 0px 31px" border="0" />
+			<div style="float:left;margin:61px 0px 0px 52px" >
+			<a href="mailto:dane@daneyankowich.com" target="_blank"><img src="images/email_me_contact.gif" id="email_me_contact" border="0" /></a><br />
+			<a href="http://www.facebook.com/daneyankowich" target="_blank"><img src="images/friend_me_contact.gif" id="friend_me_contact" border="0" /></a><br />
+			<a href="http://www.twitter.com/daneyankowich" target="_blank"><img src="images/follow_me_contact.gif" id="follow_me_contact" border="0" /></a><br />
+			<a href="http://www.linkedin.com/in/daneyankowich" target="_blank"><img src="images/link_up_contact.gif" id="link_up_contact" border="0" /></a><br />
+			<img src="images/call_me_contact.gif" id="call_me_contact" border="0" />
+			</div>
+		</div>
+		<!--End of Contact-->
+		
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--end of outer box-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- activate tabs with JavaScript -->
+<script type="text/javascript">
+
+
+// wait until document is fully scriptable
+$(function() {
+
+	// select #flowplanes and make it scrollable. use circular and navigator plugins
+	$("#flowpanes").scrollable({ circular: true, mousewheel: false }).navigator({
+
+		// select #tabs to be used as navigator
+		navi: "#tabs",
+
+		// select A tags inside the navigator to work as items (not direct children)
+		naviItem: 'li',
+
+		// assign "current" class name for the active A tag inside navigator
+		activeClass: 'current',
+
+
+
+
+		// make browser's back button work
+		history: true
+		
+		
+
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22817712-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -2,7 +2,7 @@ h2 {
   color: $gray;
   font-family: 'BrandonGrotesqueLight';
   font-size: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
   text-align: center;
   text-transform: uppercase;
   span {
@@ -21,5 +21,85 @@ p {
     color: $gray;
     font-family: 'BrandonGrotesqueMed';
     text-decoration: none;
+  }
+}
+
+.text-transform-none {
+  text-transform: none;
+  font-family: 'BrandonGrotesqueBlack';
+}
+
+.video-holder {
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.orbit-bullets li {
+  border: 1px solid #555555;
+  background: none;
+  &.active {
+    background: #555555;
+  }
+}
+
+.banner-ad {
+  @include grid-column(12);
+  .banner-ad-video {
+    background: url('http://daneyankowich.com/img/bg_banner-ad.png') top center no-repeat;
+    background-size: 100%;
+    padding: 2px 12.4% 0 12.5%;
+  }
+  .banner-ad-thumbs {
+    display: block;
+    background: #dddddd;
+    padding-top: 20px;
+    [class*="block-grid-"] > li {
+      padding: 0 0.3125rem 1.25rem;
+    }
+
+    [class*="block-grid-"] {
+      display: block;
+      padding: 0;
+      margin: 0 -0.3125rem;
+    }
+
+    .small-block-grid-5 > li:nth-of-type(1n) {
+      padding: 0 0.3125rem 1.25rem;
+    }
+  }
+  .orbit-container .orbit-prev {
+    margin-left: 20px;
+    top: 36%;
+  }
+  .orbit-container .orbit-next {
+    margin-right: 20px;
+    top: 36%;
+  }
+  .orbit-bullets {
+    margin: 0 auto 30px auto;
+  }
+}
+
+// Phone
+@media only screen and (max-width : 736px) {
+  p {
+    font-size: 1.2rem;
+  }
+  .banner-ad {
+    .banner-ad-video {
+      padding: 0;
+      background: none;
+    }
+    .banner-ad-thumbs {
+      display: none;
+    }
   }
 }
