@@ -1,0 +1,18 @@
+section.webmd {
+  background: #efefef;
+  border-top: 5px solid #0082c8;
+  p {
+    font-size: 1rem;
+  }
+  .orbit-container .orbit-prev {
+    margin-left: 150px;
+  }
+  .orbit-container .orbit-next {
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.webmd {
+  }
+}

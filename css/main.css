@@ -6843,7 +6843,6 @@ section.vandy {
   section.vandy .vandy-awards {
     padding-bottom: 0; }
   section.vandy .vandy-gif {
-    margin-top: -4rem;
     z-index: -1; }
   section.vandy .video-holder {
     padding-bottom: 63.25%;
@@ -7184,3 +7183,14 @@ section.bayer .mobile-digital {
     section.bayer .mobile-digital img {
       display: block;
       margin: 3rem auto; } }
+
+section.webmd {
+  background: #efefef;
+  border-top: 5px solid #0082c8; }
+  section.webmd p {
+    font-size: 1rem; }
+  section.webmd .orbit-container .orbit-prev {
+    margin-left: 150px; }
+  section.webmd .orbit-container .orbit-next {
+    margin-right: 150px; }
+
