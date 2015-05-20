@@ -1,0 +1,77 @@
+section.golf {
+  background: url('../img/bg-golf.png') top center no-repeat #f2f2f2;
+  background-size: contain;
+  .phones {
+    @include grid-column(7);
+    margin-top: 15rem;
+  }
+  p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .intro {
+    @include grid-column(5);
+    margin-top: 20rem;
+    p {
+      width: 100%;
+      line-height: 1.2;
+      margin-top:2rem;
+    }
+  }
+  .social-media {
+    margin-top: 10rem;
+    img {
+      @include grid-column(8, $offset: 2);
+      margin-top: 3rem;
+    }
+  }
+  .poster {
+    @include grid-column(10, $offset: 1);
+    margin-top: 10rem;
+    .poster-thumb {
+      display: block;
+      margin: 2rem auto 0;
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.golf {
+    .phones {
+      @include grid-column(9, $offset: 1.5);
+      margin-top: 3rem;
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+    .intro {
+      @include grid-column(12);
+      margin-top: 3rem;
+      p {
+        width: 100%;
+        line-height: 1.2;
+        margin-top:2rem;
+      }
+    }
+    .social-media {
+      margin-top: 5rem;
+      img {
+        @include grid-column(12, $offset: 0);
+        margin-top: 1.5rem;
+      }
+    }
+    .poster {
+      @include grid-column(10, $offset: 1);
+      margin-top: 5rem;
+      .poster-thumb {
+        display: block;
+        margin: 2rem auto 0;
+        width: 80%;
+      }
+      .orbit-bullets {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+section.mcd {
+  background: #ffffff;
+  border-top: 5px solid #dc1f26;
+  .logo {
+    @include grid-column(3, $offset: 4.5);
+    margin: 6rem 0 2rem;
+  }
+  .fries {
+    @include grid-column(10, $offset: 1);
+  }
+  .poster {
+    @include grid-column(10, $offset: 1);
+  }
+  .poster-thumb {
+    display: block;
+    margin: 2rem auto;
+  }
+  p {
+    @include grid-column(4, $offset: 4);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    color: #555555;
+  }
+  .poster {
+    .orbit-container .orbit-prev {
+      top: 50%;
+    }
+    .orbit-container .orbit-next {
+      top: 50%;
+    }
+  }
+  .share-size {
+    font-family: 'BrandonGrotesqueMedIt';
+  }
+  .orbit-container .orbit-prev {
+    margin-left: -120px;
+  }
+  .orbit-container .orbit-next {
+    margin-right: -100px;
+  }
+  .mobile-exp {
+    margin-top: 10rem;
+  }
+  .instore-exp, .outdoor-exp {
+    margin-top: 15rem;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.mcd {
+    .logo {
+      @include grid-column(8, $offset: 2);
+      margin: 3rem 0 1rem;
+    }
+    .orbit-container .orbit-bullets {
+      margin-top: 0;
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+    .fries {
+      @include grid-column(12, $offset: 0);
+    }
+    .poster {
+      @include grid-column(12, $offset: 0);
+    }
+    p {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+    .mobile-exp {
+      margin-top: 5rem;
+    }
+    .instore-exp, .outdoor-exp {
+      margin-top: 5rem;
+    }
+  }
+}

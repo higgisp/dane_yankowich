@@ -1,0 +1,79 @@
+section.antico {
+  background: #f8f5ef;
+  border-top: 5px solid #994302;
+  p {
+    color: #555555;
+    font-size: 1.2rem;
+    clear: both;
+    width: 63%;
+  }
+  .antico-logo {
+    display: block;
+    @include grid-column(8, $offset: 2);
+    margin: 5rem 0 2rem;
+  }
+  .logo-gt {
+    @include grid-column(6, $offset: 3);
+    margin: 13rem auto;
+  }
+  .poster {
+    @include grid-column(8, $offset: 2);
+    margin: 3rem 0 10rem;
+    .nonslider-poster {
+      display: block;
+      margin: 6rem 0;
+    }
+  }
+  .buzz {
+    @include grid-column(6, $offset: 3);
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+  .shirt {
+    @include grid-column(6, $offset: 3);
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.antico {
+    .antico-logo {
+      display: block;
+      @include grid-column(10, $offset: 1);
+      margin: 2rem 0 1rem;
+    }
+    p {
+      color: #555555;
+      font-size: 1.2rem;
+      clear: both;
+      width: 90%;
+      br {
+        display: none;
+      }
+    }
+    .arrow {
+      padding: 75px 0;
+    }
+    .logo-gt {
+      @include grid-column(10, $offset: 1);
+      margin: 5rem auto;
+    }
+    .poster {
+      @include grid-column(10, $offset: 1);
+      margin: 3rem 0 5rem;
+      .nonslider-poster {
+        display: block;
+        margin: 6rem 0;
+      }
+    }
+    .buzz {
+      @include grid-column(10, $offset: 1);
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+    .shirt {
+      @include grid-column(10, $offset: 1);
+      margin-top: 2rem;
+    }
+  }
+}

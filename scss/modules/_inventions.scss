@@ -1,0 +1,118 @@
+section.inventions {
+  background: url('../img/napkin-bg.jpg') top center no-repeat #f7f7f3;
+  background-size: contain;
+  border-top: 5px solid #1fa8d9;
+  .napkin-logo {
+    @include grid-column(10, $offset: 1);
+    margin: 10rem 0 1rem;
+  }
+  #instafeed {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  #instafeed .instagram_container {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  #instafeed .instagram_container .instagram_image {
+    width: 100%;
+  }
+  #instafeed .instagram_container {
+    margin:1em auto 2em;
+  }
+  #instafeed .instagram_container .instagram_image {
+    width:100%;
+  }
+  #instafeed .instagram_image_meta {
+    font-family:"Interstate Bold",sans-serif;
+  }
+  #instafeed .instagram_image_meta a {
+    text-decoration:none;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item {
+    display:inline-block;
+    width:49%;
+    background-color:#ccc;
+    height:30px;
+    -webkit-border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item a {
+    display:block;
+    height:30px;
+    width:100%;
+    margin-top:8px;
+    color:#7a7a7a;
+    font-size:.8em;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item a:hover {
+    color:#353535;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item.caption {
+    display:block;
+    background-color:transparent;
+    width:100%;
+    text-align:left;
+    font-family:Interstate Light,sans-serif;
+    font-size:.9em;
+    margin:.5em;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item.owner {
+    background-color:transparent;
+    display:inline-block;
+    float:right;
+    font-size:.8em;
+    text-align:right;
+    margin-top:.6em;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item.owner a {
+    display:inline;
+    font-size:.9em;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item.owner .owner_profile_picture {
+    width:20px;
+    margin-top:-1px;
+  }
+  #instafeed .instagram_image_meta .instagram_image_meta_item.caption {
+  display:inline;
+  }
+
+  #instafeed .instagram_image_meta .instagram_image_meta_item.owner {
+  margin-top:10px;
+  }
+
+  #instafeed .instagram_image_meta .instagram_image_meta_item.owner a {
+  color:#7a7a7a;
+  }
+
+  #instafeed .instagram_image_meta .instagram_image_meta_item {
+  width:auto;
+  margin-right:10px;
+  background-color:transparent;
+  }
+
+  #instafeed .instagram_image_meta .instagram_image_meta_item a {
+  color:#000;
+  }
+
+  #instafeed .instagram_image_meta .instagram_image_meta_item a:before {
+  color:#ff4e33;
+  }
+
+  #instafeed .instagram_image_meta {
+  text-align:left;
+  }
+
+  #instafeed {
+  max-width:500px;
+  text-align:left;
+  margin:0 auto;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.inventions {
+  }
+}

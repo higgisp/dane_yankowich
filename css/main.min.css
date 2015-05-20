@@ -5709,6 +5709,10 @@ th.hide-for-touch {
   src: url('../Fonts/BrandonGrotesque/Brandon_med.ttf'); }
 
 @font-face {
+  font-family: 'BrandonGrotesqueMedIt';
+  src: url('../Fonts/BrandonGrotesque/Brandon_med_it.ttf'); }
+
+@font-face {
   font-family: 'BrandonGrotesqueReg';
   src: url('../Fonts/BrandonGrotesque/Brandon_reg.ttf'); }
 
@@ -5798,6 +5802,48 @@ p {
   .banner-ad .orbit-bullets {
     margin: 0 auto 30px auto; }
 
+.left-section {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 50%;
+  float: left;
+  margin-top: 10rem; }
+  .left-section img {
+    width: 70%;
+    float: left; }
+  .left-section h2 {
+    margin-top: 30%;
+    line-height: 1.1; }
+  .left-section p.full {
+    width: 100% !important;
+    margin-left: 0 !important; }
+
+.mobile-section {
+  display: none; }
+
+.right-section {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 50%;
+  float: left;
+  margin-top: 10rem; }
+  .right-section img {
+    width: 70%;
+    float: right; }
+    .right-section img.mcd-share-icons {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+      float: none; }
+  .right-section h2 {
+    margin-top: 30%;
+    line-height: 1.1; }
+  .right-section p.full {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 1rem;
+    padding-bottom: 0; }
+
 @media only screen and (max-width: 736px) {
   p {
     font-size: 1.2rem; }
@@ -5805,6 +5851,31 @@ p {
     padding: 0;
     background: none; }
   .banner-ad .banner-ad-thumbs {
+    display: none; }
+  .mobile-section {
+    display: block;
+    margin-top: 10rem; }
+    .mobile-section img.mcd-share-icons {
+      display: block;
+      width: 70%;
+      margin: 0 auto; }
+  .right-section, .left-section {
+    width: 100%;
+    margin-top: 3rem; }
+    .right-section img, .left-section img {
+      width: 80%;
+      float: none;
+      display: block;
+      margin: 0 auto; }
+    .right-section h2, .left-section h2 {
+      width: 100%; }
+    .right-section p, .left-section p {
+      width: 100% !important; }
+  .right-section h2 {
+    display: none; }
+  .right-section p {
+    display: none; }
+  .right-section img.mcd-share-icons {
     display: none; } }
 
 header {
@@ -6298,6 +6369,10 @@ section.iphone-carousel {
       width: 28px;
       height: 28px;
       border: none; }
+
+@media only screen and (max-width: 786px) {
+  section.iphone-carousel {
+    display: none; } }
 
 section.home-banner {
   background-attachment: fixed;
@@ -7187,10 +7262,534 @@ section.bayer .mobile-digital {
 section.webmd {
   background: #efefef;
   border-top: 5px solid #0082c8; }
+  section.webmd .webmd-logo {
+    display: block;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 33.33333%;
+    float: left;
+    margin-left: 33.33333% !important;
+    margin: 5rem 0 1rem; }
   section.webmd p {
     font-size: 1rem; }
+    section.webmd p.tagline {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 66.66667%;
+      float: left;
+      margin-left: 16.66667% !important;
+      margin: 2rem 0 5rem; }
+  section.webmd .webmd-laptop {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left;
+    margin-left: 12.5% !important; }
+  section.webmd .print-experience {
+    margin-bottom: 4rem; }
+  section.webmd .webmd-thumbs {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left;
+    margin-left: 12.5% !important;
+    margin-top: 2rem; }
+  section.webmd .online-experience {
+    margin: 12rem auto; }
+    section.webmd .online-experience p {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 70.83333%;
+      float: left;
+      margin-left: 14.58333% !important; }
+  section.webmd .worst-advice {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 33.33333%;
+    float: left;
+    margin-left: 33.33333% !important;
+    margin: 10rem auto; }
+  section.webmd .webmd-imac {
+    margin-top: 2.5rem; }
+  section.webmd .interactive-banner p {
+    width: 48%; }
   section.webmd .orbit-container .orbit-prev {
     margin-left: 150px; }
   section.webmd .orbit-container .orbit-next {
     margin-right: 150px; }
+
+section.mcd {
+  background: #ffffff;
+  border-top: 5px solid #dc1f26; }
+  section.mcd .logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 25%;
+    float: left;
+    margin-left: 37.5% !important;
+    margin: 6rem 0 2rem; }
+  section.mcd .fries {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important; }
+  section.mcd .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important; }
+  section.mcd .poster-thumb {
+    display: block;
+    margin: 2rem auto; }
+  section.mcd p {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 33.33333%;
+    float: left;
+    margin-left: 33.33333% !important;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    color: #555555; }
+  section.mcd .poster .orbit-container .orbit-prev {
+    top: 50%; }
+  section.mcd .poster .orbit-container .orbit-next {
+    top: 50%; }
+  section.mcd .share-size {
+    font-family: 'BrandonGrotesqueMedIt'; }
+  section.mcd .orbit-container .orbit-prev {
+    margin-left: -120px; }
+  section.mcd .orbit-container .orbit-next {
+    margin-right: -100px; }
+  section.mcd .mobile-exp {
+    margin-top: 10rem; }
+  section.mcd .instore-exp, section.mcd .outdoor-exp {
+    margin-top: 15rem; }
+
+@media only screen and (max-width: 736px) {
+  section.mcd .logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0 1rem; }
+  section.mcd .orbit-container .orbit-bullets {
+    margin-top: 0; }
+  section.mcd .arrow {
+    padding: 75px 0; }
+  section.mcd .fries {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important; }
+  section.mcd .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important; }
+  section.mcd p {
+    width: 100%;
+    margin-left: 0 !important; }
+  section.mcd .mobile-exp {
+    margin-top: 5rem; }
+  section.mcd .instore-exp, section.mcd .outdoor-exp {
+    margin-top: 5rem; } }
+
+section.golf {
+  background: url('../img/bg-golf.png') top center no-repeat #f2f2f2;
+  background-size: contain; }
+  section.golf .phones {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 58.33333%;
+    float: left;
+    margin-top: 15rem; }
+  section.golf p {
+    font-size: 1rem;
+    width: 100%; }
+  section.golf .intro {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    float: left;
+    margin-top: 20rem; }
+    section.golf .intro p {
+      width: 100%;
+      line-height: 1.2;
+      margin-top: 2rem; }
+  section.golf .social-media {
+    margin-top: 10rem; }
+    section.golf .social-media img {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 66.66667%;
+      float: left;
+      margin-left: 16.66667% !important;
+      margin-top: 3rem; }
+  section.golf .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin-top: 10rem; }
+    section.golf .poster .poster-thumb {
+      display: block;
+      margin: 2rem auto 0;
+      width: 60%; }
+
+@media only screen and (max-width: 736px) {
+  section.golf .phones {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left;
+    margin-left: 12.5% !important;
+    margin-top: 3rem; }
+  section.golf .arrow {
+    padding: 75px 0; }
+  section.golf .intro {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-top: 3rem; }
+    section.golf .intro p {
+      width: 100%;
+      line-height: 1.2;
+      margin-top: 2rem; }
+  section.golf .social-media {
+    margin-top: 5rem; }
+    section.golf .social-media img {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left;
+      margin-left: 0% !important;
+      margin-top: 1.5rem; }
+  section.golf .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin-top: 5rem; }
+    section.golf .poster .poster-thumb {
+      display: block;
+      margin: 2rem auto 0;
+      width: 80%; }
+    section.golf .poster .orbit-bullets {
+      margin-top: 0; } }
+
+section.antico {
+  background: #f8f5ef;
+  border-top: 5px solid #994302; }
+  section.antico p {
+    color: #555555;
+    font-size: 1.2rem;
+    clear: both;
+    width: 63%; }
+  section.antico .antico-logo {
+    display: block;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 5rem 0 2rem; }
+  section.antico .logo-gt {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin: 13rem auto; }
+  section.antico .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0 10rem; }
+    section.antico .poster .nonslider-poster {
+      display: block;
+      margin: 6rem 0; }
+  section.antico .buzz {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin-top: 2rem;
+    margin-bottom: 10rem; }
+  section.antico .shirt {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin-top: 2rem; }
+
+@media only screen and (max-width: 736px) {
+  section.antico .antico-logo {
+    display: block;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin: 2rem 0 1rem; }
+  section.antico p {
+    color: #555555;
+    font-size: 1.2rem;
+    clear: both;
+    width: 90%; }
+    section.antico p br {
+      display: none; }
+  section.antico .arrow {
+    padding: 75px 0; }
+  section.antico .logo-gt {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin: 5rem auto; }
+  section.antico .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin: 3rem 0 5rem; }
+    section.antico .poster .nonslider-poster {
+      display: block;
+      margin: 6rem 0; }
+  section.antico .buzz {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin-top: 2rem;
+    margin-bottom: 5rem; }
+  section.antico .shirt {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin-top: 2rem; } }
+
+section.cash {
+  background: url('../img/cash-bg.jpg') top center no-repeat #ffffff;
+  background-size: contain;
+  border-top: 5px solid #a0c44a; }
+  section.cash .cash-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 25%;
+    float: left;
+    margin-left: 37.5% !important;
+    margin: 5rem 0 1rem; }
+  section.cash .cash-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    font-size: 1rem;
+    margin: 2rem 0 4rem; }
+  section.cash .piggy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: -6.66667% !important; }
+  section.cash p {
+    font-size: 1rem;
+    width: 100%; }
+  section.cash .choose-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin: 15rem 0; }
+
+@media only screen and (max-width: 736px) {
+  section.cash .arrow {
+    padding: 75px 0; } }
+
+section.crystal {
+  background: url('../img/crystal-bg.jpg') top center no-repeat #ffffff;
+  background-size: contain;
+  border-top: 5px solid #20368c; }
+  section.crystal .crystal-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    float: left;
+    margin-left: 29.16667% !important;
+    margin: 15rem 0 1rem; }
+  section.crystal .crystal-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 41.66667%;
+    float: left;
+    margin-left: 29.16667% !important;
+    font-size: 1rem;
+    margin: 2rem 0 4rem; }
+  section.crystal .piggy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: -6.66667% !important; }
+  section.crystal p {
+    font-size: 1rem;
+    width: 100%; }
+  section.crystal .choose-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin: 15rem 0; }
+
+@media only screen and (max-width: 736px) {
+  section.crystal .arrow {
+    padding: 75px 0; } }
+
+section.portal {
+  background: url('../img/portal-bg.png') top center no-repeat #fefefe;
+  background-size: contain;
+  border-top: 5px solid #1fa8d9; }
+  section.portal .portal-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin: 10rem 0 1rem; }
+  section.portal .portal-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    font-size: 1rem;
+    margin: 2rem 0 4rem; }
+  section.portal .piggy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: -6.66667% !important; }
+  section.portal p {
+    font-size: 1rem;
+    width: 100%; }
+  section.portal .choose-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin: 15rem 0; }
+
+@media only screen and (max-width: 736px) {
+  section.portal .arrow {
+    padding: 75px 0; } }
+
+section.inventions {
+  background: url('../img/napkin-bg.jpg') top center no-repeat #f7f7f3;
+  background-size: contain;
+  border-top: 5px solid #1fa8d9; }
+  section.inventions .napkin-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin: 10rem 0 1rem; }
+  section.inventions #instafeed {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left; }
+  section.inventions #instafeed .instagram_container {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 2em; }
+  section.inventions #instafeed .instagram_container .instagram_image {
+    width: 100%; }
+  section.inventions #instafeed .instagram_container {
+    margin: 1em auto 2em; }
+  section.inventions #instafeed .instagram_container .instagram_image {
+    width: 100%; }
+  section.inventions #instafeed .instagram_image_meta {
+    font-family: "Interstate Bold",sans-serif; }
+  section.inventions #instafeed .instagram_image_meta a {
+    text-decoration: none; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item {
+    display: inline-block;
+    width: 49%;
+    background-color: #ccc;
+    height: 30px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item a {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-top: 8px;
+    color: #7a7a7a;
+    font-size: .8em; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item a:hover {
+    color: #353535; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.caption {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    font-family: Interstate Light,sans-serif;
+    font-size: .9em;
+    margin: .5em; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.owner {
+    background-color: transparent;
+    display: inline-block;
+    float: right;
+    font-size: .8em;
+    text-align: right;
+    margin-top: .6em; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.owner a {
+    display: inline;
+    font-size: .9em; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.owner .owner_profile_picture {
+    width: 20px;
+    margin-top: -1px; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.caption {
+    display: inline; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.owner {
+    margin-top: 10px; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item.owner a {
+    color: #7a7a7a; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item {
+    width: auto;
+    margin-right: 10px;
+    background-color: transparent; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item a {
+    color: #000; }
+  section.inventions #instafeed .instagram_image_meta .instagram_image_meta_item a:before {
+    color: #ff4e33; }
+  section.inventions #instafeed .instagram_image_meta {
+    text-align: left; }
+  section.inventions #instafeed {
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto; }
 

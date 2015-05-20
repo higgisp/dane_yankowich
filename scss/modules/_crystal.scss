@@ -1,0 +1,33 @@
+section.crystal {
+  background: url('../img/crystal-bg.jpg') top center no-repeat #ffffff;
+  background-size: contain;
+  border-top: 5px solid #20368c;
+  .crystal-logo {
+    @include grid-column(5, $offset: 3.5);
+    margin: 15rem 0 1rem;
+  }
+  .crystal-copy {
+    @include grid-column(5, $offset: 3.5);
+    font-size: 1rem;
+    margin: 2rem 0 4rem;
+  }
+  .piggy {
+    @include grid-column(10, $offset: -0.8);
+  }
+  p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .choose-logo {
+    @include grid-column(6, $offset: 3);
+    margin: 15rem 0;
+  }
+}
+
+@media only screen and (max-width : 736px) {
+  section.crystal {
+    .arrow {
+      padding: 75px 0;
+    }
+  }
+}

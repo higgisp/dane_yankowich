@@ -88,6 +88,52 @@ p {
   }
 }
 
+.left-section {
+  @include grid-column(6);
+  margin-top: 10rem;
+  img {
+    width: 70%;
+    float: left;
+  }
+  h2 {
+    margin-top: 30%;
+    line-height: 1.1;
+  }
+  p.full {
+    width: 100% !important;
+    margin-left: 0 !important
+  }
+}
+
+.mobile-section {
+  display: none;
+}
+
+.right-section {
+  @include grid-column(6);
+  margin-top: 10rem;
+  img {
+    width: 70%;
+    float: right;
+    &.mcd-share-icons {
+      width: 50%;
+      display: block;
+      margin:0 auto;
+      float: none;
+    }
+  }
+  h2 {
+    margin-top: 30%;
+    line-height: 1.1;
+  }
+  p.full {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+  }
+}
+
 // Phone
 @media only screen and (max-width : 736px) {
   p {
@@ -99,6 +145,42 @@ p {
       background: none;
     }
     .banner-ad-thumbs {
+      display: none;
+    }
+  }
+  .mobile-section {
+    display: block;
+    margin-top: 10rem;
+    img.mcd-share-icons {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .right-section, .left-section {
+    width: 100%;
+    margin-top: 3rem;
+    img {
+      width: 80%;
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
+    h2 {
+      width: 100%;
+    }
+    p {
+      width: 100% !important;
+    }
+  }
+  .right-section {
+    h2 {
+      display: none;
+    }
+    p {
+      display: none;
+    }
+    img.mcd-share-icons {
       display: none;
     }
   }
