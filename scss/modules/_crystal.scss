@@ -3,31 +3,64 @@ section.crystal {
   background-size: contain;
   border-top: 5px solid #20368c;
   .crystal-logo {
-    @include grid-column(5, $offset: 3.5);
+    @include grid-column(4, $offset: 4);
     margin: 15rem 0 1rem;
   }
   .crystal-copy {
-    @include grid-column(5, $offset: 3.5);
+    @include grid-column(5.5, $offset: 3.25);
     font-size: 1rem;
     margin: 2rem 0 4rem;
-  }
-  .piggy {
-    @include grid-column(10, $offset: -0.8);
   }
   p {
     font-size: 1rem;
     width: 100%;
+    clear:both;
   }
-  .choose-logo {
+  .poster {
+    @include grid-column(8, $offset: 2);
+    margin: 3rem 0 10rem;
+    .thumb {
+      @include grid-column(9, $offset: 1.5);
+    }
+  }
+  .grocery {
+    margin-bottom: 10rem;
+  }
+  .store {
+    @include grid-column(8, $offset: 2);
+    margin: 1rem 0 3rem;
+  }
+  .store-fifty {
     @include grid-column(6, $offset: 3);
-    margin: 15rem 0;
+    margin: 1rem 0 3rem;
   }
 }
 
 @media only screen and (max-width : 736px) {
   section.crystal {
+    p {
+      width: 100%;
+    }
+    .store, .store-fifty {
+      @include grid-column(12, $offset: 0);
+    }
+    .grocery {
+      margin-bottom: 5rem;
+    }
     .arrow {
       padding: 75px 0;
+    }
+    .crystal-logo {
+      @include grid-column(8, $offset: 2);
+      margin: 5rem 0 1rem;
+    }
+    .crystal-copy {
+      @include grid-column(12, $offset: 0);
+      font-size: 1rem;
+      margin: 2rem 0 4rem;
+    }
+    .poster {
+     @include grid-column(12, $offset: 0);
     }
   }
 }

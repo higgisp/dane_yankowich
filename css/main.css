@@ -6521,7 +6521,9 @@ section.resume {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
-    float: left; } }
+    float: left; }
+    .download a {
+      background-size: 6%; } }
 
 @media only screen and (max-width: 736px) {
   h2 {
@@ -6800,6 +6802,8 @@ section.little-debbie {
         position: absolute;
         width: 96.5%;
         height: 79.5%; }
+  section.little-debbie .social-media {
+    margin-bottom: 10rem; }
   section.little-debbie .ld-slider4 {
     padding-bottom: 0; }
     section.little-debbie .ld-slider4 div.vine {
@@ -7608,9 +7612,9 @@ section.cash {
   section.cash .piggy {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 83.33333%;
+    width: 58.33333%;
     float: left;
-    margin-left: -6.66667% !important; }
+    margin-left: 8.33333% !important; }
   section.cash p {
     font-size: 1rem;
     width: 100%; }
@@ -7621,10 +7625,83 @@ section.cash {
     float: left;
     margin-left: 25% !important;
     margin: 15rem 0; }
+  section.cash .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left;
+    margin-left: 12.5% !important;
+    margin-top: 3rem; }
+  section.cash .social-media {
+    margin-bottom: 10rem; }
+  section.cash .cash-install {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0; }
+  section.cash .cash-mobile {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0 10rem; }
+  section.cash .left-section p, section.cash .right-section p {
+    width: 65%; }
 
 @media only screen and (max-width: 736px) {
   section.cash .arrow {
-    padding: 75px 0; } }
+    padding: 75px 0; }
+  section.cash .cash-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    margin-left: 25% !important;
+    margin: 5rem 0 1rem; }
+  section.cash .piggy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left;
+    margin-left: 0% !important; }
+  section.cash p br {
+    display: none; }
+  section.cash .cash-install {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin: 3rem 0; }
+  section.cash .cash-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important; }
+  section.cash .choose-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important;
+    margin: 5rem 0; }
+  section.cash .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important; }
+  section.cash .cash-mobile {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important;
+    margin: 3rem 0 0; } }
 
 section.crystal {
   background: url('../img/crystal-bg.jpg') top center no-repeat #ffffff;
@@ -7633,38 +7710,86 @@ section.crystal {
   section.crystal .crystal-logo {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 41.66667%;
+    width: 33.33333%;
     float: left;
-    margin-left: 29.16667% !important;
+    margin-left: 33.33333% !important;
     margin: 15rem 0 1rem; }
   section.crystal .crystal-copy {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 41.66667%;
+    width: 45.83333%;
     float: left;
-    margin-left: 29.16667% !important;
+    margin-left: 27.08333% !important;
     font-size: 1rem;
     margin: 2rem 0 4rem; }
-  section.crystal .piggy {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 83.33333%;
-    float: left;
-    margin-left: -6.66667% !important; }
   section.crystal p {
     font-size: 1rem;
-    width: 100%; }
-  section.crystal .choose-logo {
+    width: 100%;
+    clear: both; }
+  section.crystal .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0 10rem; }
+    section.crystal .poster .thumb {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 75%;
+      float: left;
+      margin-left: 12.5% !important; }
+  section.crystal .grocery {
+    margin-bottom: 10rem; }
+  section.crystal .store {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 1rem 0 3rem; }
+  section.crystal .store-fifty {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 50%;
     float: left;
     margin-left: 25% !important;
-    margin: 15rem 0; }
+    margin: 1rem 0 3rem; }
 
 @media only screen and (max-width: 736px) {
+  section.crystal p {
+    width: 100%; }
+  section.crystal .store, section.crystal .store-fifty {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important; }
+  section.crystal .grocery {
+    margin-bottom: 5rem; }
   section.crystal .arrow {
-    padding: 75px 0; } }
+    padding: 75px 0; }
+  section.crystal .crystal-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 5rem 0 1rem; }
+  section.crystal .crystal-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important;
+    font-size: 1rem;
+    margin: 2rem 0 4rem; }
+  section.crystal .poster {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important; } }
 
 section.portal {
   background: url('../img/portal-bg.png') top center no-repeat #fefefe;
@@ -7685,42 +7810,111 @@ section.portal {
     margin-left: 16.66667% !important;
     font-size: 1rem;
     margin: 2rem 0 4rem; }
-  section.portal .piggy {
+  section.portal .tv {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 83.33333%;
     float: left;
-    margin-left: -6.66667% !important; }
+    margin-left: 8.33333% !important;
+    margin: 3rem 0 10rem; }
+  section.portal .stand {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 3rem 0 10rem; }
+    section.portal .stand .thumbs {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 75%;
+      float: left;
+      margin-left: 12.5% !important; }
+  section.portal .escalator {
+    display: block;
+    margin: 3rem auto 10rem;
+    width: 80%; }
+  section.portal .wall {
+    display: block;
+    margin: 3rem auto 0;
+    width: 80%; }
   section.portal p {
     font-size: 1rem;
     width: 100%; }
-  section.portal .choose-logo {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 50%;
-    float: left;
-    margin-left: 25% !important;
-    margin: 15rem 0; }
 
 @media only screen and (max-width: 736px) {
   section.portal .arrow {
-    padding: 75px 0; } }
+    padding: 75px 0; }
+  section.portal .portal-logo {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 66.66667%;
+    float: left;
+    margin-left: 16.66667% !important;
+    margin: 5rem 0 1rem; }
+  section.portal .portal-copy {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important;
+    font-size: 1rem;
+    margin: 2rem 0 4rem; }
+  section.portal .tv {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: 8.33333% !important;
+    margin: 3rem 0 10rem; }
+  section.portal .stand {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    margin-left: 0% !important;
+    margin: 3rem 0 10rem; }
+    section.portal .stand .thumbs {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left;
+      margin-left: 0% !important; }
+  section.portal .escalator {
+    display: block;
+    margin: 3rem auto 5rem;
+    width: 90%; }
+  section.portal .wall {
+    display: block;
+    margin: 3rem auto 0;
+    width: 90%; }
+  section.portal p {
+    font-size: 1rem;
+    width: 100%; } }
 
 section.inventions {
   background: url('../img/napkin-bg.jpg') top center no-repeat #f7f7f3;
   background-size: contain;
   border-top: 5px solid #1fa8d9; }
   section.inventions .napkin-logo {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 83.33333%;
+    width: 100%;
     float: left;
-    margin-left: 8.33333% !important;
-    margin: 10rem 0 1rem; }
+    display: block;
+    margin: 10rem 0 1rem;
+    clear: both; }
+  section.inventions .napkin-copy {
+    width: 100%;
+    font-size: 1rem;
+    margin: 1.5rem 0 3rem;
+    clear: both;
+    float: left; }
   section.inventions #instafeed {
     max-width: 500px;
     margin: 0 auto;
     text-align: left; }
+    section.inventions #instafeed .caption.instagram_image_meta_item p {
+      width: 100%;
+      font-size: 1rem; }
   section.inventions #instafeed .instagram_container {
     margin: 0 auto;
     margin-top: 1em;
@@ -7793,3 +7987,19 @@ section.inventions {
     text-align: left;
     margin: 0 auto; }
 
+@media only screen and (max-width: 736px) {
+  section.inventions .napkin-logo {
+    margin-top: 3rem; }
+    section.inventions .napkin-logo img {
+      display: block;
+      width: 90%;
+      margin: 0 auto; }
+  section.inventions .napkin-copy {
+    width: 100%;
+    padding: 1rem; }
+    section.inventions .napkin-copy br {
+      display: none; }
+  section.inventions #instafeed {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left; } }

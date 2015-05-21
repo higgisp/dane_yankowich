@@ -162,6 +162,9 @@ section.resume {
   }
   .download {
     @include grid-column(12);
+    a {
+      background-size: 6%;
+    }
   }
 }
 

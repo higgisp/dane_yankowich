@@ -3,13 +3,29 @@ section.inventions {
   background-size: contain;
   border-top: 5px solid #1fa8d9;
   .napkin-logo {
-    @include grid-column(10, $offset: 1);
+    width: 100%;
+    float: left;
+    display: block;
     margin: 10rem 0 1rem;
+    clear:both;
+  }
+  .napkin-copy {
+    width: 100%;
+    font-size: 1rem;
+    margin: 1.5rem 0 3rem;
+    clear: both;
+    float: left;
   }
   #instafeed {
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
+    .caption.instagram_image_meta_item {
+      p {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
   }
   #instafeed .instagram_container {
     margin: 0 auto;
@@ -114,5 +130,25 @@ section.inventions {
 
 @media only screen and (max-width : 736px) {
   section.inventions {
+    .napkin-logo {
+      margin-top: 3rem;
+      img {
+        display: block;
+        width: 90%;
+        margin: 0 auto
+      }
+    }
+    .napkin-copy {
+      width: 100%;
+      padding: 1rem;
+      br {
+        display: none;
+      }
+    }
+    #instafeed {
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+    }
   }
 }
